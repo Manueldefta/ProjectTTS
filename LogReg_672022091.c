@@ -16,7 +16,7 @@ void main()
 	FILE *currentfile2 = NULL;
 
 	char user[100],pass[100];
-	char jawab='Y';
+	char jawab='y';
 
 
 	inputfile= fopen ("DATABASE.txt","r");
@@ -46,11 +46,11 @@ ULANG:
 		BALIK:
 		printf ("\n\nApakah Anda Yakin?(Y/T): ");
 		scanf (" %c",&jawab);
-		if (jawab=='Y')
+		if (jawab=='y' || jawab=='Y')
 		{
 			goto LANJUT;
 		}
-		else if (jawab=='T')
+		else if (jawab=='t' || jawab=='T')
 		{
 			goto ULANG;
 		}
@@ -108,17 +108,17 @@ void login(){
 	}
 	else if(strcmp(cek_user, User)==1&&strcmp(cek_pass, Pass)==0)
 	{
-	char jwb='Y';
+	char jwb='y';
 	printf("\n     !!!!Nama Invalid!!!!");
 	SINI2:
 	printf ("\n\n\nLupa Nama Akun Anda? (Y/T): ");
 	scanf (" %c",&jwb);
-		if(jwb=='Y')
+		if(jwb=='y' || jwb=='Y')
 		{
 			system ("cls");
 			main();
 		}
-		else if(jwb=='T')
+		else if(jwb=='t' || jwb=='T')
 		{
 			goto INPUT;
 		}
@@ -133,17 +133,17 @@ void login(){
 
 	else if(strcmp(cek_user, User)==0&&strcmp(cek_pass, Pass)==1)
 	{
-	char jwb='Y';
+	char jwb='y';
 	printf("\n     !!!!Password Invalid!!!!");
 	SINI:
 	printf ("\n\n\nLupa Password? (Y/T): ");
 	scanf (" %c",&jwb);
-		if(jwb=='Y')
+		if(jwb=='y' || jwb=='Y')
 		{
 			system ("cls");
 			main();
 		}
-		else if(jwb=='T')
+		else if(jwb=='t' || jwb=='T')
 		{
 			goto INPUT;
 		}
@@ -157,17 +157,17 @@ void login(){
 	}
 	else
 	{
-	char jwb='Y';
+	char jwb='y';
 	printf ("  !!!!Akun tidak ditemukan!!!!");
 	SINI3:
 	printf ("\n\nIngin Buat Akun? (Y/T): ");
 	scanf (" %c",&jwb);
-		if(jwb=='Y')
+		if(jwb=='y' || jwb=='Y')
 		{
 			system ("cls");
 			main();
 		}
-		else if(jwb=='T')
+		else if(jwb=='t' || jwb=='T')
 		{
 			goto INPUT;
 		}
@@ -180,4 +180,6 @@ void login(){
 		}
 	}
 }
+
+
 
