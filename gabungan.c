@@ -329,7 +329,7 @@ void input_nama()
     printf("masukkan penyakit pasien = ");
     scanf(" %[^\n]s", &psn[idx_pasien].penyakit);
     syarat:
-    printf("\t\t\t\t\t pilihan: ");
+    printf("\t\t\t\t\t pilihan: (y/n) ");
     scanf("%s", &input);
     if(input == 'y'){
         idx_pasien++;
