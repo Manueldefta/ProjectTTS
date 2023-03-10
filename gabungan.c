@@ -849,15 +849,10 @@ void harga_obat()
     int jenis,khusus,i,x,w,y,z,hitung,pilihan;
 int cont;
 
-
-here:
-
-hotel:
     getch();
     system("cls");
     ulang1:
     printf ("        Jenis obat yang tersedia \n");
-    //Jenis Kamar
     printf("=========================================\n");
     printf("|[1] obat penyakit ringan  Rp.20.000    |\n");
     printf("|[2] obat penyakit berat   Rp.300.000   |\n");
@@ -876,8 +871,8 @@ hotel:
         scanf("%d",&x);
         totalharga=x*i;
         printf("Total pemesanan obat = Rp.%d\n", totalharga);
-        getchar();//Membaca input y/n
-        cont=getchar();//variabel untul menyimpan y/n
+        getchar();
+        cont=getchar();
         printf("harga obat anda = Rp.%d.\n\n",totalharga);
         system("pause");
         system("cls");
@@ -893,8 +888,8 @@ hotel:
         scanf("%d",&x);
         totalharga=x*y;
         printf("Total pemesanan obat = Rp.%d\n", totalharga);
-        getchar();//Membaca input y/n
-        cont=getchar();//variabel untul menyimpan y/n
+        getchar();
+        cont=getchar();
         printf("harga obat anda = Rp.%d.\n\n",totalharga);
         system("pause");
         system("cls");
@@ -909,8 +904,8 @@ hotel:
         scanf("%d",&x);
         totalharga=x*z;
         printf("Total pemesanan obat = Rp.%d\n", totalharga);\
-        getchar();//Membaca input y/n
-        cont=getchar();//variabel untul menyimpan y/n
+        getchar();
+        cont=getchar();
         system("pause");
         system("cls");
         total_biaya();
